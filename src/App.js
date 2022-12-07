@@ -1,22 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import { MyGoals } from './components/GoalList';
+import {Headerz} from './components/Header'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Headerz></Headerz>
+        <h1 class= "text-center bg-secondary text-light mt-1 p-3">
+          My Goals For This Book2
+        </h1>
+        <MyGoals></MyGoals>
+
+        
       </header>
     </div>
   );
